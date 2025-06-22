@@ -2,7 +2,7 @@
 
 public record LeadResource(
     int Id, 
-    int ActiveCampaignLeadId,
+    Guid ActiveCampaignLeadId,
     string FirstName, 
     string LastName,
     int? LeadStatus,

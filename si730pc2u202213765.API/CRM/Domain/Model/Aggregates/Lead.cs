@@ -8,7 +8,7 @@ public partial class Lead
     public int Id { get; }
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
-    public int ActiveCampaignLeadId { get; private set; } 
+    public Guid ActiveCampaignLeadId { get; private set; } = Guid.NewGuid();
     public int? AssignedSalesAgentId { get; private set; }
     public ELeadStatus LeadStatus { get; protected set; }
     public DateTime? ContactedAt { get; private set; }
